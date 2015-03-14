@@ -1,4 +1,13 @@
 <%- Lucy.code.for('profile in result.results') %>
-  <h2><%- Lucy.code.variable('profile.user.name.first') %> <%- Lucy.code.variable('profile.user.name.last') %></h2>
-  <p><%- Lucy.code.variable('profile.user.email') %></p>
+  <div class="row">
+    <div class="col-xs-3">
+      <img src="<%- Lucy.code.variable('profile.user.picture.medium') %>" style="width: 100%">
+    </div>
+    <div class="col-xs-9">
+      <h2><%- Lucy.code.variable('profile.user.name.first') %> <%- Lucy.code.variable('profile.user.name.last') %></h2>
+      <p><%- Lucy.code.variable('profile.user.username') %></p>
+      <p><%- Lucy.code.variable('profile.user.email') %></p>
+      <p><%- Lucy.code.variable('profile.user.phone') %></p>
+    </div>
+  </div>
 <%- Lucy.code.rof() %>
