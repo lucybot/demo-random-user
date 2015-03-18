@@ -2,6 +2,7 @@
   "name": "get_random_users",
   "title": "Random Users",
   "description": "A free API for generating random user data. Like Lorem Ipsum, but for people!",
+  "force_insecure": true,
   "free": true,
   "views": ["user_list"],
   "actions": ["get_random_users"],
